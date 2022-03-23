@@ -1,0 +1,21 @@
+{
+    "name": "paulocjota/friendly-enum",
+    "description": "FriendlyEnum is a PHP trait used to handle enum fields in Laravel framework in an easy way.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Paulocjota\\FriendlyEnum\\": "src"
+        },
+        "files": [
+            "src/FriendlyEnum.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "paulocjota"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
