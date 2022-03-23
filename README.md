@@ -2,7 +2,7 @@
 
 <p align="center">
  <a href="#about">About</a> •
- <a href="#get-started">Get started</a> •
+ <a href="#getting-started">Getting started</a> •
  <a href="#api-reference">API Reference</a> •
  <a href="#technologies">Technologies</a> •
  <a href="#author">Author</a> •
@@ -17,7 +17,12 @@ FriendlyEnum is a PHP trait used to handle enum fields in Laravel framework in a
 #### The problem it solves
 You create an enum field in the migration file with user states for example. As the system is developed you also need the values in the views, in Form Requests / validators and many other places. Now a change is needed in the system to support one more state. Good luck remembering in each place that you need to change. This package tries to solve this problem.
 
-## Get started
+## Getting started
+
+### Install the package
+```bash
+composer require paulocjota/friendly-enum
+```
 
 ### Setting up
 ```php
