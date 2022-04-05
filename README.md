@@ -30,13 +30,13 @@ composer require paulocjota/friendly-enum
 
 namespace App\Models;
 
-use Paulocjota\FriendlyEnum;// <-- 1. Import trait
+use Paulocjota\FriendlyEnum;// <-- 1. Imports trait
 
 class User extends Model
 {
-    use FriendlyEnum;// <-- 2. Make use of in desired model
+    use FriendlyEnum;// <-- 2. Utilizes trait on chosen model
 
-    const ENUM_STATUS = [// <-- 3. Create one or more constants prefixed with "ENUM_"
+    const ENUM_STATUS = [// <-- 3. Creates one or more constants prefixed with "ENUM_"
         'normal' => 'normal',
         'blocked' => 'bloqueado',
         'banned' => 'banido',
@@ -71,18 +71,18 @@ public function up()
 ### API Reference
 | Method                                                              | Return   | Comment                                                    |
 | ------------------------------------------------------------------- | :------: | :--------------------------------------------------------: |
-| `getEnum(string $enum, bool $capitalize = false)`                   | array    | Get an array with key value                                |
-| `getEnumKeys(string $enum)`                                         | array    | Get an array with only the keys                            |
-| `getEnumKeysAsString(string $enum)`                                 | string   |  Get a string with all keys each one separated by a comma. |
-| `getEnumKey(string $enum, string $value)`                           | string   | Get key as a string passing the value.                     |
-| `getEnumValue(string $enum, string $key, bool $capitalize = false)` | string   | Get value as a string passing the key.                     |
+| `getEnum(string $enum, bool $capitalize = false)`                   | array    | Returns an array with key value                                |
+| `getEnumKeys(string $enum)`                                         | array    | Returns an array with only the keys                            |
+| `getEnumKeysAsString(string $enum)`                                 | string   | Returns a string with all keys each one separated by a comma. |
+| `getEnumKey(string $enum, string $value)`                           | string   | Returns the key as a string passing the value.                     |
+| `getEnumValue(string $enum, string $key, bool $capitalize = false)` | string   | Returns the value as a string passing the key.                     |
 
 ## Technologies
-FriendlyEnum was created with Laravel in mind. But it is pure PHP has no depency so you are free to use with whatever
+FriendlyEnum was created with Laravel in mind but it is pure PHP and has no dependency, so you are free to use with whatever
 tools you want.
 
 ## Author
 [paulocjota](https://github.com/paulocjota)
 
 ## License
-The get function is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The FriendlyEnum trait is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
